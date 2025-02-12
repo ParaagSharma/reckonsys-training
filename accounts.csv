@@ -1,0 +1,4 @@
+account_num,name,contact,initial_deposit,balance,transaction_logs
+0,abc,123,100,1000,"[{'amount': 100, 'transaction': 'initial deposit', 'current_balance': 100}, {'amount': 900, 'transaction': 'credit', 'current_balance': 1000}]"
+1,def,456,500,0,"[{'amount': 500, 'transaction': 'initial deposit', 'current_balance': 500}, {'amount': 500, 'transaction': 'debit', 'current_balance': 0}]"
+2,ghi,789,1000,1000,"[{'amount': 1000, 'transaction': 'initial deposit', 'current_balance': 1000}]"
