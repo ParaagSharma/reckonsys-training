@@ -1,4 +1,4 @@
-class FileManager():
+class FileManager:
     '''
         Write a simple context manager that opens a file, 
         writes some text into it, and then automatically closes 
