@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>All Recipes</h2>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                <a href="{% url 'recipe_update' recipe.pk %}">{{ recipe.name }}</a>
+                <form action="{% url 'recipe_delete' recipe.pk %}" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
